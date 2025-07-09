@@ -233,3 +233,331 @@
 1751903939: Client Telegraf-Consumer-shEkq disconnected.
 1751903941: mosquitto version 2.0.21 terminating
 1751903941: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1751923110: mosquitto version 2.0.21 starting
+1751923110: Config loaded from /mosquitto/config/mosquitto.conf.
+1751923110: Opening ipv4 listen socket on port 1883.
+1751923110: Opening ipv6 listen socket on port 1883.
+1751923110: Opening websockets listen socket on port 9001.
+1751923110: mosquitto version 2.0.21 running
+1751923111: New connection from 192.168.0.6:57404 on port 1883.
+1751923111: New client connected from 192.168.0.6:57404 as Telegraf-Consumer-mDfaR (p2, c1, k60).
+1751923111: New connection from 192.168.0.6:57416 on port 1883.
+1751923111: New client connected from 192.168.0.6:57416 as Telegraf-Consumer-hcT8w (p2, c1, k60).
+1751923111: New connection from 192.168.0.6:57428 on port 1883.
+1751923111: New client connected from 192.168.0.6:57428 as Telegraf-Consumer-44Kwl (p2, c1, k60).
+1751923111: New connection from 192.168.0.6:57438 on port 1883.
+1751923111: New client connected from 192.168.0.6:57438 as Telegraf-Consumer-TYv3o (p2, c1, k60).
+1751923184: New connection from 192.168.0.1:38018 on port 1883.
+1751923184: New client connected from 192.168.0.1:38018 as auto-BA791EA6-1917-BC7C-8321-800223B4BB04 (p2, c1, k60).
+1751923216: New connection from 192.168.0.1:45628 on port 1883.
+1751923216: New client connected from 192.168.0.1:45628 as auto-BAD3AC4B-5592-5445-574A-B7088A95A210 (p2, c1, k60).
+1751929508: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1751929508: Client Telegraf-Consumer-mDfaR has exceeded timeout, disconnecting.
+1751929508: Client Telegraf-Consumer-44Kwl has exceeded timeout, disconnecting.
+1751929508: Client Telegraf-Consumer-TYv3o has exceeded timeout, disconnecting.
+1751929508: Client auto-BAD3AC4B-5592-5445-574A-B7088A95A210 has exceeded timeout, disconnecting.
+1751929508: Client Telegraf-Consumer-hcT8w has exceeded timeout, disconnecting.
+1751929508: Client auto-BA791EA6-1917-BC7C-8321-800223B4BB04 has exceeded timeout, disconnecting.
+1751929509: New connection from 192.168.0.1:34750 on port 1883.
+1751929509: New client connected from 192.168.0.1:34750 as auto-86135148-2DA7-A2D9-77AB-A02F7EA55317 (p2, c1, k60).
+1751929509: New connection from 192.168.0.1:34758 on port 1883.
+1751929509: New client connected from 192.168.0.1:34758 as auto-BFBAC3C7-4EF9-9AF6-0B0D-4CC7737E9742 (p2, c1, k60).
+1751929510: New connection from 192.168.0.6:48816 on port 1883.
+1751929510: New connection from 192.168.0.6:48832 on port 1883.
+1751929510: New connection from 192.168.0.6:48846 on port 1883.
+1751929510: New connection from 192.168.0.6:48850 on port 1883.
+1751929510: New client connected from 192.168.0.6:48816 as Telegraf-Consumer-hcT8w (p2, c1, k60).
+1751929510: New client connected from 192.168.0.6:48832 as Telegraf-Consumer-TYv3o (p2, c1, k60).
+1751929510: New client connected from 192.168.0.6:48846 as Telegraf-Consumer-44Kwl (p2, c1, k60).
+1751929510: New client connected from 192.168.0.6:48850 as Telegraf-Consumer-mDfaR (p2, c1, k60).
+1751932503: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1751932503: Client auto-86135148-2DA7-A2D9-77AB-A02F7EA55317 has exceeded timeout, disconnecting.
+1751932503: Client Telegraf-Consumer-hcT8w has exceeded timeout, disconnecting.
+1751932503: Client Telegraf-Consumer-TYv3o has exceeded timeout, disconnecting.
+1751932503: Client Telegraf-Consumer-44Kwl has exceeded timeout, disconnecting.
+1751932503: Client Telegraf-Consumer-mDfaR has exceeded timeout, disconnecting.
+1751932503: Client auto-BFBAC3C7-4EF9-9AF6-0B0D-4CC7737E9742 has exceeded timeout, disconnecting.
+1751932504: New connection from 192.168.0.1:50412 on port 1883.
+1751932504: New client connected from 192.168.0.1:50412 as auto-89F1FAF5-65DE-9479-A20B-CAD0BE3CC6C3 (p2, c1, k60).
+1751932504: New connection from 192.168.0.1:50428 on port 1883.
+1751932504: New client connected from 192.168.0.1:50428 as auto-569BE198-FFBB-77F7-BB3D-343FC29E1032 (p2, c1, k60).
+1751932505: New connection from 192.168.0.6:60768 on port 1883.
+1751932505: New connection from 192.168.0.6:60774 on port 1883.
+1751932505: New connection from 192.168.0.6:60786 on port 1883.
+1751932505: New connection from 192.168.0.6:60776 on port 1883.
+1751932505: New client connected from 192.168.0.6:60768 as Telegraf-Consumer-TYv3o (p2, c1, k60).
+1751932505: New client connected from 192.168.0.6:60774 as Telegraf-Consumer-44Kwl (p2, c1, k60).
+1751932505: New client connected from 192.168.0.6:60786 as Telegraf-Consumer-mDfaR (p2, c1, k60).
+1751932505: New client connected from 192.168.0.6:60776 as Telegraf-Consumer-hcT8w (p2, c1, k60).
+1751933873: Client auto-89F1FAF5-65DE-9479-A20B-CAD0BE3CC6C3 has exceeded timeout, disconnecting.
+1751933873: Client Telegraf-Consumer-TYv3o has exceeded timeout, disconnecting.
+1751933873: Client Telegraf-Consumer-44Kwl has exceeded timeout, disconnecting.
+1751933873: Client Telegraf-Consumer-mDfaR has exceeded timeout, disconnecting.
+1751933873: Client Telegraf-Consumer-hcT8w has exceeded timeout, disconnecting.
+1751933873: Client auto-569BE198-FFBB-77F7-BB3D-343FC29E1032 has exceeded timeout, disconnecting.
+1751933874: New connection from 192.168.0.1:52486 on port 1883.
+1751933874: New client connected from 192.168.0.1:52486 as auto-2FC9B4EB-9DCC-BD8D-100D-5CBF23E386DF (p2, c1, k60).
+1751933874: New connection from 192.168.0.1:52502 on port 1883.
+1751933874: New client connected from 192.168.0.1:52502 as auto-15164C4E-FA2D-289C-EC51-3FB1A481B518 (p2, c1, k60).
+1751933879: New connection from 192.168.0.6:45558 on port 1883.
+1751933879: New connection from 192.168.0.6:45570 on port 1883.
+1751933879: New connection from 192.168.0.6:45578 on port 1883.
+1751933879: New connection from 192.168.0.6:45590 on port 1883.
+1751933879: New client connected from 192.168.0.6:45558 as Telegraf-Consumer-hcT8w (p2, c1, k60).
+1751933879: New client connected from 192.168.0.6:45570 as Telegraf-Consumer-mDfaR (p2, c1, k60).
+1751933879: New client connected from 192.168.0.6:45578 as Telegraf-Consumer-TYv3o (p2, c1, k60).
+1751933879: New client connected from 192.168.0.6:45590 as Telegraf-Consumer-44Kwl (p2, c1, k60).
+1751934101: Client auto-2FC9B4EB-9DCC-BD8D-100D-5CBF23E386DF has exceeded timeout, disconnecting.
+1751934101: Client Telegraf-Consumer-hcT8w has exceeded timeout, disconnecting.
+1751934101: Client Telegraf-Consumer-mDfaR has exceeded timeout, disconnecting.
+1751934101: Client Telegraf-Consumer-TYv3o has exceeded timeout, disconnecting.
+1751934101: Client Telegraf-Consumer-44Kwl has exceeded timeout, disconnecting.
+1751934101: Client auto-15164C4E-FA2D-289C-EC51-3FB1A481B518 has exceeded timeout, disconnecting.
+1751934102: New connection from 192.168.0.1:59576 on port 1883.
+1751934102: New client connected from 192.168.0.1:59576 as auto-5672F3B8-43B2-A194-6ABF-AA372237A3D8 (p2, c1, k60).
+1751934102: New connection from 192.168.0.1:59590 on port 1883.
+1751934102: New client connected from 192.168.0.1:59590 as auto-3337D80D-9C4C-317B-6D1E-8CAC25420B26 (p2, c1, k60).
+1751934105: New connection from 192.168.0.6:56166 on port 1883.
+1751934105: New connection from 192.168.0.6:56180 on port 1883.
+1751934105: New connection from 192.168.0.6:56192 on port 1883.
+1751934105: New connection from 192.168.0.6:56206 on port 1883.
+1751934105: New client connected from 192.168.0.6:56166 as Telegraf-Consumer-hcT8w (p2, c1, k60).
+1751934105: New client connected from 192.168.0.6:56180 as Telegraf-Consumer-TYv3o (p2, c1, k60).
+1751934105: New client connected from 192.168.0.6:56192 as Telegraf-Consumer-mDfaR (p2, c1, k60).
+1751934105: New client connected from 192.168.0.6:56206 as Telegraf-Consumer-44Kwl (p2, c1, k60).
+1751936450: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1751936450: Client auto-5672F3B8-43B2-A194-6ABF-AA372237A3D8 has exceeded timeout, disconnecting.
+1751936450: Client Telegraf-Consumer-hcT8w has exceeded timeout, disconnecting.
+1751936450: Client Telegraf-Consumer-TYv3o has exceeded timeout, disconnecting.
+1751936450: Client Telegraf-Consumer-mDfaR has exceeded timeout, disconnecting.
+1751936450: Client Telegraf-Consumer-44Kwl has exceeded timeout, disconnecting.
+1751936450: Client auto-3337D80D-9C4C-317B-6D1E-8CAC25420B26 has exceeded timeout, disconnecting.
+1751936451: New connection from 192.168.0.1:42014 on port 1883.
+1751936451: New client connected from 192.168.0.1:42014 as auto-71071109-5209-9880-7224-2733B371A74E (p2, c1, k60).
+1751936451: New connection from 192.168.0.1:42030 on port 1883.
+1751936451: New client connected from 192.168.0.1:42030 as auto-8FAF1C01-A357-F4FE-BC06-D62E964D7A41 (p2, c1, k60).
+1751936458: New connection from 192.168.0.6:49124 on port 1883.
+1751936458: New connection from 192.168.0.6:49130 on port 1883.
+1751936458: New connection from 192.168.0.6:49136 on port 1883.
+1751936458: New connection from 192.168.0.6:49142 on port 1883.
+1751936458: New client connected from 192.168.0.6:49124 as Telegraf-Consumer-44Kwl (p2, c1, k60).
+1751936458: New client connected from 192.168.0.6:49130 as Telegraf-Consumer-TYv3o (p2, c1, k60).
+1751936458: New client connected from 192.168.0.6:49136 as Telegraf-Consumer-hcT8w (p2, c1, k60).
+1751936458: New client connected from 192.168.0.6:49142 as Telegraf-Consumer-mDfaR (p2, c1, k60).
+1751938206: Client auto-71071109-5209-9880-7224-2733B371A74E has exceeded timeout, disconnecting.
+1751938206: Client Telegraf-Consumer-44Kwl has exceeded timeout, disconnecting.
+1751938206: Client Telegraf-Consumer-TYv3o has exceeded timeout, disconnecting.
+1751938206: Client Telegraf-Consumer-hcT8w has exceeded timeout, disconnecting.
+1751938206: Client Telegraf-Consumer-mDfaR has exceeded timeout, disconnecting.
+1751938206: Client auto-8FAF1C01-A357-F4FE-BC06-D62E964D7A41 has exceeded timeout, disconnecting.
+1751938207: New connection from 192.168.0.1:47146 on port 1883.
+1751938207: New connection from 192.168.0.1:47158 on port 1883.
+1751938207: New client connected from 192.168.0.1:47146 as auto-E8FCEA35-29A9-3C59-2DB2-A80A24C8FF15 (p2, c1, k60).
+1751938207: New client connected from 192.168.0.1:47158 as auto-9F281369-58C9-0BAA-BE5E-846275FB37FB (p2, c1, k60).
+1751938216: New connection from 192.168.0.6:35736 on port 1883.
+1751938216: New connection from 192.168.0.6:35738 on port 1883.
+1751938216: New connection from 192.168.0.6:35748 on port 1883.
+1751938216: New connection from 192.168.0.6:35758 on port 1883.
+1751938216: New client connected from 192.168.0.6:35736 as Telegraf-Consumer-TYv3o (p2, c1, k60).
+1751938216: New client connected from 192.168.0.6:35738 as Telegraf-Consumer-mDfaR (p2, c1, k60).
+1751938216: New client connected from 192.168.0.6:35748 as Telegraf-Consumer-hcT8w (p2, c1, k60).
+1751938216: New client connected from 192.168.0.6:35758 as Telegraf-Consumer-44Kwl (p2, c1, k60).
+1751939024: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1751939024: Client auto-E8FCEA35-29A9-3C59-2DB2-A80A24C8FF15 has exceeded timeout, disconnecting.
+1751939024: Client Telegraf-Consumer-TYv3o has exceeded timeout, disconnecting.
+1751939024: Client Telegraf-Consumer-mDfaR has exceeded timeout, disconnecting.
+1751939024: Client Telegraf-Consumer-hcT8w has exceeded timeout, disconnecting.
+1751939024: Client Telegraf-Consumer-44Kwl has exceeded timeout, disconnecting.
+1751939024: Client auto-9F281369-58C9-0BAA-BE5E-846275FB37FB has exceeded timeout, disconnecting.
+1751939025: New connection from 192.168.0.1:33036 on port 1883.
+1751939025: New connection from 192.168.0.1:33038 on port 1883.
+1751939025: New client connected from 192.168.0.1:33036 as auto-5D7B3320-9716-C3F4-FCFB-00903EBB6FD1 (p2, c1, k60).
+1751939025: New client connected from 192.168.0.1:33038 as auto-F57DBA80-E384-4BF3-B2C8-C001D3CDA7C7 (p2, c1, k60).
+1751939028: New connection from 192.168.0.6:36446 on port 1883.
+1751939028: New connection from 192.168.0.6:36452 on port 1883.
+1751939028: New connection from 192.168.0.6:36456 on port 1883.
+1751939028: New connection from 192.168.0.6:36472 on port 1883.
+1751939028: New client connected from 192.168.0.6:36446 as Telegraf-Consumer-TYv3o (p2, c1, k60).
+1751939028: New client connected from 192.168.0.6:36452 as Telegraf-Consumer-hcT8w (p2, c1, k60).
+1751939028: New client connected from 192.168.0.6:36456 as Telegraf-Consumer-44Kwl (p2, c1, k60).
+1751939028: New client connected from 192.168.0.6:36472 as Telegraf-Consumer-mDfaR (p2, c1, k60).
+1751939862: Client auto-5D7B3320-9716-C3F4-FCFB-00903EBB6FD1 has exceeded timeout, disconnecting.
+1751939862: Client Telegraf-Consumer-TYv3o has exceeded timeout, disconnecting.
+1751939862: Client Telegraf-Consumer-hcT8w has exceeded timeout, disconnecting.
+1751939862: Client Telegraf-Consumer-44Kwl has exceeded timeout, disconnecting.
+1751939862: Client Telegraf-Consumer-mDfaR has exceeded timeout, disconnecting.
+1751939862: Client auto-F57DBA80-E384-4BF3-B2C8-C001D3CDA7C7 has exceeded timeout, disconnecting.
+1751939863: New connection from 192.168.0.1:37624 on port 1883.
+1751939863: New connection from 192.168.0.1:37620 on port 1883.
+1751939863: New client connected from 192.168.0.1:37624 as auto-ADC61F68-CA5F-174B-2E4E-E9C536CF43E2 (p2, c1, k60).
+1751939863: New client connected from 192.168.0.1:37620 as auto-15BE28C3-EE2F-BA42-FAF5-7234FB7DA624 (p2, c1, k60).
+1751939870: New connection from 192.168.0.6:38650 on port 1883.
+1751939870: New connection from 192.168.0.6:38660 on port 1883.
+1751939870: New connection from 192.168.0.6:38676 on port 1883.
+1751939870: New connection from 192.168.0.6:38684 on port 1883.
+1751939870: New client connected from 192.168.0.6:38650 as Telegraf-Consumer-44Kwl (p2, c1, k60).
+1751939870: New client connected from 192.168.0.6:38660 as Telegraf-Consumer-hcT8w (p2, c1, k60).
+1751939870: New client connected from 192.168.0.6:38676 as Telegraf-Consumer-TYv3o (p2, c1, k60).
+1751939870: New client connected from 192.168.0.6:38684 as Telegraf-Consumer-mDfaR (p2, c1, k60).
+1751940458: Client auto-15BE28C3-EE2F-BA42-FAF5-7234FB7DA624 has exceeded timeout, disconnecting.
+1751940458: Client Telegraf-Consumer-44Kwl has exceeded timeout, disconnecting.
+1751940458: Client Telegraf-Consumer-hcT8w has exceeded timeout, disconnecting.
+1751940458: Client Telegraf-Consumer-TYv3o has exceeded timeout, disconnecting.
+1751940458: Client Telegraf-Consumer-mDfaR has exceeded timeout, disconnecting.
+1751940458: Client auto-ADC61F68-CA5F-174B-2E4E-E9C536CF43E2 has exceeded timeout, disconnecting.
+1751940459: New connection from 192.168.0.1:50224 on port 1883.
+1751940459: New client connected from 192.168.0.1:50224 as auto-8F940EA2-3ED4-8773-5B53-0F0C5ACB2504 (p2, c1, k60).
+1751940459: New connection from 192.168.0.1:50230 on port 1883.
+1751940459: New client connected from 192.168.0.1:50230 as auto-CEBCEA70-7EF1-F9CE-7244-2B707BD0A3E8 (p2, c1, k60).
+1751940465: New connection from 192.168.0.6:49446 on port 1883.
+1751940465: New connection from 192.168.0.6:49464 on port 1883.
+1751940465: New connection from 192.168.0.6:49462 on port 1883.
+1751940465: New connection from 192.168.0.6:49450 on port 1883.
+1751940465: New client connected from 192.168.0.6:49446 as Telegraf-Consumer-hcT8w (p2, c1, k60).
+1751940465: New client connected from 192.168.0.6:49464 as Telegraf-Consumer-TYv3o (p2, c1, k60).
+1751940465: New client connected from 192.168.0.6:49462 as Telegraf-Consumer-mDfaR (p2, c1, k60).
+1751940465: New client connected from 192.168.0.6:49450 as Telegraf-Consumer-44Kwl (p2, c1, k60).
+1751941219: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1751941219: Client auto-8F940EA2-3ED4-8773-5B53-0F0C5ACB2504 has exceeded timeout, disconnecting.
+1751941219: Client Telegraf-Consumer-hcT8w has exceeded timeout, disconnecting.
+1751941219: Client Telegraf-Consumer-TYv3o has exceeded timeout, disconnecting.
+1751941219: Client Telegraf-Consumer-mDfaR has exceeded timeout, disconnecting.
+1751941219: Client Telegraf-Consumer-44Kwl has exceeded timeout, disconnecting.
+1751941219: Client auto-CEBCEA70-7EF1-F9CE-7244-2B707BD0A3E8 has exceeded timeout, disconnecting.
+1751941220: New connection from 192.168.0.1:34906 on port 1883.
+1751941220: New client connected from 192.168.0.1:34906 as auto-BA07A0C1-8332-E814-8B62-7A7F78D1A076 (p2, c1, k60).
+1751941220: New connection from 192.168.0.1:34920 on port 1883.
+1751941220: New client connected from 192.168.0.1:34920 as auto-2DDF81B8-308D-52C4-7183-1340AC09BE7C (p2, c1, k60).
+1751941221: New connection from 192.168.0.6:54318 on port 1883.
+1751941221: New connection from 192.168.0.6:54308 on port 1883.
+1751941221: New connection from 192.168.0.6:54322 on port 1883.
+1751941221: New connection from 192.168.0.6:54328 on port 1883.
+1751941221: New client connected from 192.168.0.6:54318 as Telegraf-Consumer-hcT8w (p2, c1, k60).
+1751941221: New client connected from 192.168.0.6:54308 as Telegraf-Consumer-44Kwl (p2, c1, k60).
+1751941221: New client connected from 192.168.0.6:54322 as Telegraf-Consumer-mDfaR (p2, c1, k60).
+1751941221: New client connected from 192.168.0.6:54328 as Telegraf-Consumer-TYv3o (p2, c1, k60).
+1751941377: Client auto-BA07A0C1-8332-E814-8B62-7A7F78D1A076 has exceeded timeout, disconnecting.
+1751941377: Client Telegraf-Consumer-hcT8w has exceeded timeout, disconnecting.
+1751941377: Client Telegraf-Consumer-44Kwl has exceeded timeout, disconnecting.
+1751941377: Client Telegraf-Consumer-mDfaR has exceeded timeout, disconnecting.
+1751941377: Client Telegraf-Consumer-TYv3o has exceeded timeout, disconnecting.
+1751941377: Client auto-2DDF81B8-308D-52C4-7183-1340AC09BE7C has exceeded timeout, disconnecting.
+1751941378: New connection from 192.168.0.6:59074 on port 1883.
+1751941378: New connection from 192.168.0.6:59086 on port 1883.
+1751941378: New connection from 192.168.0.6:59102 on port 1883.
+1751941378: New connection from 192.168.0.6:59112 on port 1883.
+1751941378: New client connected from 192.168.0.6:59074 as Telegraf-Consumer-hcT8w (p2, c1, k60).
+1751941378: New client connected from 192.168.0.6:59086 as Telegraf-Consumer-44Kwl (p2, c1, k60).
+1751941378: New client connected from 192.168.0.6:59102 as Telegraf-Consumer-TYv3o (p2, c1, k60).
+1751941378: New client connected from 192.168.0.6:59112 as Telegraf-Consumer-mDfaR (p2, c1, k60).
+1751941378: New connection from 192.168.0.1:37976 on port 1883.
+1751941378: New client connected from 192.168.0.1:37976 as auto-50043CEE-8567-F2A4-DA0E-B4767FAA7009 (p2, c1, k60).
+1751941378: New connection from 192.168.0.1:37986 on port 1883.
+1751941378: New client connected from 192.168.0.1:37986 as auto-B61980F5-0F9F-248A-284C-9F6F61ACE719 (p2, c1, k60).
+1751941469: Client Telegraf-Consumer-hcT8w has exceeded timeout, disconnecting.
+1751941469: Client Telegraf-Consumer-44Kwl has exceeded timeout, disconnecting.
+1751941469: Client Telegraf-Consumer-TYv3o has exceeded timeout, disconnecting.
+1751941469: Client Telegraf-Consumer-mDfaR has exceeded timeout, disconnecting.
+1751941469: Client auto-50043CEE-8567-F2A4-DA0E-B4767FAA7009 has exceeded timeout, disconnecting.
+1751941470: New connection from 192.168.0.6:45518 on port 1883.
+1751941470: New connection from 192.168.0.6:45504 on port 1883.
+1751941470: New connection from 192.168.0.6:45534 on port 1883.
+1751941470: New connection from 192.168.0.6:45540 on port 1883.
+1751941470: New client connected from 192.168.0.6:45518 as Telegraf-Consumer-44Kwl (p2, c1, k60).
+1751941470: New client connected from 192.168.0.6:45504 as Telegraf-Consumer-TYv3o (p2, c1, k60).
+1751941470: New client connected from 192.168.0.6:45534 as Telegraf-Consumer-mDfaR (p2, c1, k60).
+1751941470: New client connected from 192.168.0.6:45540 as Telegraf-Consumer-hcT8w (p2, c1, k60).
+1751941470: New connection from 192.168.0.1:36668 on port 1883.
+1751941470: New client connected from 192.168.0.1:36668 as auto-B95BC60E-8B54-E493-EBFC-FE205B3620F2 (p2, c1, k60).
+1751942439: Client Telegraf-Consumer-44Kwl has exceeded timeout, disconnecting.
+1751942439: Client Telegraf-Consumer-TYv3o has exceeded timeout, disconnecting.
+1751942439: Client Telegraf-Consumer-mDfaR has exceeded timeout, disconnecting.
+1751942439: Client Telegraf-Consumer-hcT8w has exceeded timeout, disconnecting.
+1751942439: Client auto-B95BC60E-8B54-E493-EBFC-FE205B3620F2 has exceeded timeout, disconnecting.
+1751942439: Client auto-B61980F5-0F9F-248A-284C-9F6F61ACE719 has exceeded timeout, disconnecting.
+1751942440: New connection from 192.168.0.1:50926 on port 1883.
+1751942440: New connection from 192.168.0.1:50928 on port 1883.
+1751942440: New client connected from 192.168.0.1:50926 as auto-BBA9FD9B-A90B-01BC-6B8F-61E1C36E3EA8 (p2, c1, k60).
+1751942440: New client connected from 192.168.0.1:50928 as auto-3C0DAA71-46DE-D862-3C4F-6672818D30B1 (p2, c1, k60).
+1751942446: New connection from 192.168.0.6:36522 on port 1883.
+1751942446: New connection from 192.168.0.6:36534 on port 1883.
+1751942446: New connection from 192.168.0.6:36538 on port 1883.
+1751942446: New connection from 192.168.0.6:36550 on port 1883.
+1751942446: New client connected from 192.168.0.6:36522 as Telegraf-Consumer-hcT8w (p2, c1, k60).
+1751942446: New client connected from 192.168.0.6:36534 as Telegraf-Consumer-TYv3o (p2, c1, k60).
+1751942446: New client connected from 192.168.0.6:36538 as Telegraf-Consumer-mDfaR (p2, c1, k60).
+1751942446: New client connected from 192.168.0.6:36550 as Telegraf-Consumer-44Kwl (p2, c1, k60).
+1751943020: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1751944821: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1751945553: Client auto-3C0DAA71-46DE-D862-3C4F-6672818D30B1 disconnected.
+1751945555: Client auto-BBA9FD9B-A90B-01BC-6B8F-61E1C36E3EA8 disconnected.
+1751945568: Client Telegraf-Consumer-mDfaR disconnected.
+1751945568: Client Telegraf-Consumer-hcT8w disconnected.
+1751945568: Client Telegraf-Consumer-44Kwl disconnected.
+1751945568: Client Telegraf-Consumer-TYv3o disconnected.
+1751945570: mosquitto version 2.0.21 terminating
+1751945570: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1752030022: mosquitto version 2.0.21 starting
+1752030022: Config loaded from /mosquitto/config/mosquitto.conf.
+1752030022: Opening ipv4 listen socket on port 1883.
+1752030022: Opening ipv6 listen socket on port 1883.
+1752030022: Opening websockets listen socket on port 9001.
+1752030022: mosquitto version 2.0.21 running
+1752030023: New connection from 172.18.0.6:37118 on port 1883.
+1752030023: New client connected from 172.18.0.6:37118 as Telegraf-Consumer-5oIX7 (p2, c1, k60).
+1752030023: New connection from 172.18.0.6:37132 on port 1883.
+1752030023: New client connected from 172.18.0.6:37132 as Telegraf-Consumer-fsgqJ (p2, c1, k60).
+1752030023: New connection from 172.18.0.6:37136 on port 1883.
+1752030023: New client connected from 172.18.0.6:37136 as Telegraf-Consumer-1PIF0 (p2, c1, k60).
+1752030023: New connection from 172.18.0.6:37142 on port 1883.
+1752030023: New client connected from 172.18.0.6:37142 as Telegraf-Consumer-ua3xj (p2, c1, k60).
+1752030043: New connection from 172.18.0.1:44810 on port 1883.
+1752030043: New client connected from 172.18.0.1:44810 as auto-0523D915-CC7F-4180-36D9-CB5A69FC5488 (p2, c1, k60).
+1752030072: New connection from 172.18.0.1:57668 on port 1883.
+1752030072: New client connected from 172.18.0.1:57668 as auto-C4688B9E-9CB2-AF8F-F106-C6C87ABEB943 (p2, c1, k60).
+1752030692: Client auto-C4688B9E-9CB2-AF8F-F106-C6C87ABEB943 disconnected.
+1752030697: Client auto-0523D915-CC7F-4180-36D9-CB5A69FC5488 disconnected.
+1752030706: Client Telegraf-Consumer-5oIX7 disconnected.
+1752030706: Client Telegraf-Consumer-fsgqJ disconnected.
+1752030706: Client Telegraf-Consumer-1PIF0 disconnected.
+1752030706: Client Telegraf-Consumer-ua3xj disconnected.
+1752030713: mosquitto version 2.0.21 terminating
+1752030713: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1752030722: mosquitto version 2.0.21 starting
+1752030722: Config loaded from /mosquitto/config/mosquitto.conf.
+1752030722: Opening ipv4 listen socket on port 1883.
+1752030722: Opening ipv6 listen socket on port 1883.
+1752030722: Opening websockets listen socket on port 9001.
+1752030722: mosquitto version 2.0.21 running
+1752030723: New connection from 172.19.0.6:52498 on port 1883.
+1752030723: New client connected from 172.19.0.6:52498 as Telegraf-Consumer-TTlJm (p2, c1, k60).
+1752030723: New connection from 172.19.0.6:52500 on port 1883.
+1752030723: New client connected from 172.19.0.6:52500 as Telegraf-Consumer-INBKS (p2, c1, k60).
+1752030723: New connection from 172.19.0.6:52502 on port 1883.
+1752030723: New client connected from 172.19.0.6:52502 as Telegraf-Consumer-c9Cwi (p2, c1, k60).
+1752030723: New connection from 172.19.0.6:52516 on port 1883.
+1752030723: New client connected from 172.19.0.6:52516 as Telegraf-Consumer-3MxYA (p2, c1, k60).
+1752030791: Client Telegraf-Consumer-TTlJm disconnected.
+1752030791: Client Telegraf-Consumer-INBKS disconnected.
+1752030791: Client Telegraf-Consumer-c9Cwi disconnected.
+1752030791: Client Telegraf-Consumer-3MxYA disconnected.
+1752030795: mosquitto version 2.0.21 terminating
+1752030795: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1752030909: mosquitto version 2.0.21 starting
+1752030909: Config loaded from /mosquitto/config/mosquitto.conf.
+1752030909: Opening ipv4 listen socket on port 1883.
+1752030909: Opening ipv6 listen socket on port 1883.
+1752030909: Opening websockets listen socket on port 9001.
+1752030909: mosquitto version 2.0.21 running
+1752030910: New connection from 172.22.0.6:55964 on port 1883.
+1752030910: New client connected from 172.22.0.6:55964 as Telegraf-Consumer-rwsJd (p2, c1, k60).
+1752030910: New connection from 172.22.0.6:55980 on port 1883.
+1752030910: New client connected from 172.22.0.6:55980 as Telegraf-Consumer-oLGmH (p2, c1, k60).
+1752030910: New connection from 172.22.0.6:55994 on port 1883.
+1752030910: New client connected from 172.22.0.6:55994 as Telegraf-Consumer-JF4GI (p2, c1, k60).
+1752030910: New connection from 172.22.0.6:55996 on port 1883.
+1752030910: New client connected from 172.22.0.6:55996 as Telegraf-Consumer-Ipc5Z (p2, c1, k60).
+1752030964: New connection from 172.22.0.1:33426 on port 1883.
+1752030964: New client connected from 172.22.0.1:33426 as auto-F25DAC6F-A461-578B-F850-9693AD8F8FE3 (p2, c1, k60).
+1752030973: New connection from 172.22.0.1:56194 on port 1883.
+1752030973: New client connected from 172.22.0.1:56194 as auto-6E35348B-B09A-E9A9-7FE0-708B79CA6592 (p2, c1, k60).

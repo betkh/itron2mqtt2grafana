@@ -265,6 +265,8 @@ self.base_power_demand = 2500          # W
 2. **Edit dashboard** or create new panels
 3. **Export configuration** to `grafana/dashboards/`
 
+> **Note**: This project now uses manual UI-based Grafana setup instead of hardcoded provisioning. See [Manual Grafana Setup Guide](grafana_manual_setup.md) for detailed instructions.
+
 ## **Troubleshooting**
 
 ### **Common Issues**
