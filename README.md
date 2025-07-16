@@ -43,6 +43,73 @@ This script will generate new keys and print out the LFDI string to use for regi
 
 These keys will be saved in the local directory `certs/.cert.pem` and `certs/.key.pem`
 
+## Real Smart Meter Setup
+
+### Quick Setup for Real Meters
+
+To connect to your actual smart meter over WiFi, use the automated setup script:
+
+```bash
+./setup_real_meter.sh
+```
+
+This script will:
+1. Generate certificates and keys
+2. Create a `.env` file with proper configuration
+3. Display your LFDI for Xcel registration
+4. Provide instructions for the next steps
+
+### Manual Setup for Real Meters
+
+If you prefer manual setup:
+
+1. **Generate certificates and get LFDI:**
+   ```bash
+   ./scripts/generate_keys.sh
+   ```
+
+2. **Register with Xcel Energy:**
+   - Go to [Xcel Energy Launchpad](https://my.xcelenergy.com/MyAccount/s/meters-and-devices/)
+   - Click "Add a Device"
+   - Paste your LFDI (Long Field Device Identifier)
+   - Wait for approval (24-48 hours)
+
+3. **Configure your `.env` file:**
+   ```bash
+   # Copy the template
+   cp env.template .env
+   
+   # Edit .env and add your meter details:
+   METER_IP=192.168.1.100  # Your smart meter's IP address
+   METER_PORT=8081          # Usually 8081 (default)
+   CERT_PATH=/opt/xcel_itron2mqtt/certs/.cert.pem  # For Docker
+   KEY_PATH=/opt/xcel_itron2mqtt/certs/.key.pem    # For Docker
+   ```
+
+4. **Run with real meter:**
+   ```bash
+   docker-compose --profile real_meter up -d
+   ```
+
+5. **Run with simulated meter (current setup):**
+   ```bash
+   docker-compose up -d
+   ```
+
+### Finding Your Meter's IP Address
+
+The application can automatically discover your meter using mDNS. If you prefer to specify the IP manually:
+
+1. **Automatic discovery (recommended):** Leave `METER_IP` empty in your `.env` file
+2. **Manual IP:** Find your meter's IP address on your network and set `METER_IP` in your `.env` file
+
+### Security Notes
+
+- Keep your certificates secure and never commit them to version control
+- The certificates are automatically mounted in Docker containers
+- Your meter must be on the same WiFi network as your computer
+- The LFDI is unique to your setup - keep it secure
+
 ## Docker
 
 Pull from remote (easy)

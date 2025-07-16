@@ -2,6 +2,7 @@ import os
 import logging
 from time import sleep
 from pathlib import Path
+from typing import Tuple, Optional
 from xcelMeter import xcelMeter
 from zeroconf import ServiceBrowser, ServiceListener, Zeroconf
 
@@ -46,12 +47,13 @@ def look_for_creds() -> tuple:
     else:
         raise FileNotFoundError('Could not find cert and key credentials')
 
-def mDNS_search_for_meter() -> str | int:
+
+def mDNS_search_for_meter() -> Tuple[str, int]:
     """
     Creates a new zeroconf instance to probe the network for the meter
     to extract its ip address and port. Closes the instance down when complete.
 
-    Returns: string, ip address of the meter
+    Returns: tuple of (ip_address, port) of the meter
     """
     zeroconf = Zeroconf()
     listener = XcelListener()
@@ -59,14 +61,23 @@ def mDNS_search_for_meter() -> str | int:
     browser = ServiceBrowser(zeroconf, "_smartenergy._tcp.local.", listener)
     # Have to wait to hear back from the asynchrounous listener/browser task
     sleep(10)
+
+    if listener.info is None:
+        zeroconf.close()
+        raise TimeoutError('Waiting too long to get response from meter')
+
     try:
         addresses = listener.info.addresses
-    except:
-        raise TimeoutError('Waiting too long to get response from meter')
-    print(listener.info)
-    # Auto parses the network byte format into a legible address
-    ip_address = listener.info.parsed_addresses()[0]
-    port = listener.info.port
+        print(listener.info)
+        # Auto parses the network byte format into a legible address
+        ip_address = listener.info.parsed_addresses()[0]
+        port = listener.info.port
+        if port is None:
+            raise ValueError('Meter port is None')
+    except (AttributeError, IndexError, ValueError) as e:
+        zeroconf.close()
+        raise TimeoutError(f'Invalid response from meter: {e}')
+
     # Close out our mDNS discovery device
     zeroconf.close()
   
@@ -74,11 +85,16 @@ def mDNS_search_for_meter() -> str | int:
 
 
 if __name__ == '__main__':
-    if os.getenv('METER_IP') and os.getenv('METER_PORT'):
-        ip_address = os.getenv('METER_IP')
-        port_num = os.getenv('METER_PORT')
+    # Get meter IP and port from environment or use mDNS discovery
+    meter_ip = os.getenv('METER_IP')
+    meter_port = os.getenv('METER_PORT')
+
+    if meter_ip and meter_port:
+        ip_address = meter_ip
+        port_num = int(meter_port)
     else:
         ip_address, port_num = mDNS_search_for_meter()
+
     creds = look_for_creds()
     meter = xcelMeter(INTEGRATION_NAME, ip_address, port_num, creds)
     meter.setup()

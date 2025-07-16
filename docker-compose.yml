@@ -97,7 +97,10 @@ services:
       - MQTT_PORT=${MQTT_PORT}
       - MQTT_USER=${MQTT_USER}
       - MQTT_PASSWORD=${MQTT_PASSWORD}
+      - METER_IP=${METER_IP}
       - METER_PORT=${METER_PORT}
+      - CERT_PATH=${CERT_PATH}
+      - KEY_PATH=${KEY_PATH}
       - LOGLEVEL=${LOGLEVEL}
     env_file:
       - .env

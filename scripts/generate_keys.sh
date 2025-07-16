@@ -46,7 +46,7 @@ if [ -f "${CERT_DIR}/${CERT_FILENAME}" ] && [ -f "${CERT_DIR}/${KEY_FILENAME}" ]
     echo "Looks like you have already generated your cert and key files."
     read -p "Would you like to overwrite your existing credentials? [Y/n] "
     if [ -z "${REPLY}" ]; then REPLY="Y"; fi
-    if [ ${REPLY^^} = "Y" ]; then
+    if [ "$(echo "$REPLY" | tr '[:lower:]' '[:upper:]')" = "Y" ]; then
         generate_new_keys
         print_LFDI
     fi
