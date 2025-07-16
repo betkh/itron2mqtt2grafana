@@ -1,6 +1,6 @@
 # Grafana Setup Changes - Manual UI vs Hardcoded Provisioning
 
-## **Overview**
+## **Overview:**
 
 This document explains the changes made to switch from hardcoded Grafana provisioning to manual UI-based setup. This approach provides better control, easier troubleshooting, and eliminates token-related issues.
 

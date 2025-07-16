@@ -1,6 +1,6 @@
 # Xcel Energy Monitoring Stack
 
-## **Overview**
+## **Overview:**
 
 This monitoring stack provides a complete real-time energy monitoring solution using simulated Xcel smart meter data. The stack includes:
 

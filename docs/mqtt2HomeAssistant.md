@@ -1,4 +1,4 @@
-# MQTT to Home Assistant Integration Guide
+# MQTT to Home Assistant Integration Guide:
 
 ## **Overview**
 

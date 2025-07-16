@@ -114,4 +114,4 @@ echo "   • Grafana will start with manual UI setup (no hardcoded provisioning)
 echo "   • See docs/grafana_manual_setup.md for detailed setup instructions"
 echo "   • You'll need to manually add the InfluxDB data source and import dashboards"
 echo ""
-echo "📚 For more information, see the README.md" 
+echo "📚 For more information, see the README.md " 

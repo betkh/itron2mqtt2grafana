@@ -13,7 +13,7 @@ Smart meters communicate using the Smart Energy Profile (SEP) 2.0 protocol over 
 3. **Approved LFDI**: Your Long Field Device Identifier must be approved by Xcel Energy
 4. **Certificate Authentication**: Valid TLS certificates for secure communication
 
-## Setup Process
+## Setup Process 
 
 ### Step 1: Generate Certificates and LFDI
 

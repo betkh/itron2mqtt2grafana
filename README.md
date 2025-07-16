@@ -54,6 +54,7 @@ To connect to your actual smart meter over WiFi, use the automated setup script:
 ```
 
 This script will:
+
 1. Generate certificates and keys
 2. Create a `.env` file with proper configuration
 3. Display your LFDI for Xcel registration
@@ -64,21 +65,24 @@ This script will:
 If you prefer manual setup:
 
 1. **Generate certificates and get LFDI:**
+
    ```bash
    ./scripts/generate_keys.sh
    ```
 
 2. **Register with Xcel Energy:**
+
    - Go to [Xcel Energy Launchpad](https://my.xcelenergy.com/MyAccount/s/meters-and-devices/)
    - Click "Add a Device"
    - Paste your LFDI (Long Field Device Identifier)
    - Wait for approval (24-48 hours)
 
 3. **Configure your `.env` file:**
+
    ```bash
    # Copy the template
    cp env.template .env
-   
+
    # Edit .env and add your meter details:
    METER_IP=192.168.1.100  # Your smart meter's IP address
    METER_PORT=8081          # Usually 8081 (default)
@@ -87,6 +91,7 @@ If you prefer manual setup:
    ```
 
 4. **Run with real meter:**
+
    ```bash
    docker-compose --profile real_meter up -d
    ```

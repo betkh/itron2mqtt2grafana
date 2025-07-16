@@ -15,7 +15,7 @@ services:
     command: mosquitto -c /mosquitto/config/mosquitto.conf
     restart: unless-stopped
 
-  # InfluxDB for time-series data storage
+  # InfluxDB for time-series data storage 
   influxdb:
     image: influxdb:2.7
     container_name: influxdb

@@ -19,7 +19,7 @@ This guide explains how to query your energy monitoring data stored in InfluxDB 
      |> range(start: -1h)
    ```
 
-6. **Click Submit**. You should see a table or graph with your data.
+6. **Click Submit:**. You should see a table or graph with your data.
 
 ---
 

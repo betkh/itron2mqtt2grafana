@@ -32,7 +32,7 @@ echo
 echo "Step 2: Getting LFDI for Xcel registration..."
 LFDI=$(./scripts/generate_keys.sh -p | grep -E '^[A-F0-9]{40}$')
 echo "Your LFDI is: $LFDI"
-echo "Please register this LFDI with Xcel Energy"
+echo "Please register this LFDI with Xcel Energy "
 echo
 
 # Step 3: Create .env file

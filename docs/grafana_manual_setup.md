@@ -1,4 +1,4 @@
-# Manual Grafana Setup Guide
+# Manual Grafana Setup Guide:
 
 This guide will help you set up Grafana manually through the web UI instead of using hardcoded provisioning files. This approach gives you more control and is easier to troubleshoot.
 

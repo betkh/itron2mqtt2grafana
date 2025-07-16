@@ -1,4 +1,4 @@
-# Xcel Itron2MQTT - Repository Explanation
+# Xcel Itron2MQTT - Repository Explanation:
 
 ## **Overview**
 
@@ -29,7 +29,7 @@ The MQTT messages can then be consumed with MQTT-compatible Client applications 
 - **`endpoints_default.yaml`**: Defines what data to read from the meter (power usage, energy consumption, time periods)
 - **`endpoints_3_2_39.yaml`**: Alternative configuration for specific meter firmware versions
 
-### **Security (`scripts/`)**
+### **Security(`scripts/`)**
 
 - **`generate_keys.sh`**: Creates the SSL certificates needed to authenticate with your meter
 - Generates the LFDI (Logical Field Device Identifier) string you need to register with Xcel

@@ -4,7 +4,7 @@ readonly CERT_DIR=certs
 readonly CERT_FILENAME=.cert.pem
 readonly KEY_FILENAME=.key.pem
 
-# We all need help sometimes
+# We all need help sometimes 
 Help()
 {
     # Display Help
