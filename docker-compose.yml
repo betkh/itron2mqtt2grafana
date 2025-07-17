@@ -3,7 +3,7 @@ version: "3.8"
 services:
   # MQTT Broker
   mqtt:
-    image: eclipse-mosquitto:2.0
+    image: eclipse-mosquitto:latest
     container_name: mosquitto
     ports:
       - "1883:1883"
@@ -91,7 +91,7 @@ services:
     depends_on:
       - mqtt
     volumes:
-      - certs:/opt/xcel_itron2mqtt/certs
+      - ./certs:/opt/xcel_itron2mqtt/certs
     environment:
       - MQTT_SERVER=${MQTT_SERVER}
       - MQTT_PORT=${MQTT_PORT}

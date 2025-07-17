@@ -203,6 +203,62 @@ docker run --rm -it \
 
 Alternatively, the `docker-compose.yaml` will allow you to bring up a complete monitoring stack including MQTT broker, InfluxDB, Grafana, and the xcel_itron2mqtt container. After running the setup script, simply run `docker compose up -d` to start all services. You can then use `docker exec -it xcel_itron2mqtt /bin/bash` to attach to the running container.
 
+## HTTP Meter Simulator (New)
+
+This repo now supports simulating meter data by polling an HTTP endpoint (e.g., a meter simulator running at `http://localhost:8082/upt/0/mr/1/r`).
+
+### How it works
+- The script `xcel_itron2mqtt/http_meter_simulator.py` periodically sends a GET request to the simulator endpoint.
+- It parses the XML response to extract the `value` and `touTier` fields.
+- It publishes these as a JSON message to the MQTT topic `InstantaneousMeterReading`.
+- The rest of the stack (Telegraf, InfluxDB, Grafana) can be configured to visualize this data.
+
+### Quickstart
+
+1. **Start your meter simulator** (ensure it is running and accessible at `http://localhost:8082/upt/0/mr/1/r`).
+2. **Start the monitoring stack** (MQTT, InfluxDB, Telegraf, Grafana):
+   ```bash
+   docker-compose up -d
+   ```
+3. **Run the HTTP Meter Simulator:**
+   ```bash
+   python3 xcel_itron2mqtt/http_meter_simulator.py
+   ```
+   - The script will log each reading it publishes to MQTT.
+4. **Run the MQTT subscriber (optional, for debugging):**
+   ```bash
+   python3 xcel_itron2mqtt/mqtt_subscriber.py
+   ```
+   - This will print all messages received on the `InstantaneousMeterReading` topic.
+5. **View your data in Grafana:**
+   - Open Grafana at [http://localhost:3000](http://localhost:3000)
+   - Use the dashboard to visualize real-time meter readings.
+
+### Data Flow
+
+```
+HTTP Meter Simulator (GET) → MQTT (InstantaneousMeterReading) → Telegraf → InfluxDB → Grafana
+```
+
+- The simulator publishes JSON messages like `{ "value": 49000, "touTier": 0 }` to the `InstantaneousMeterReading` topic.
+- Telegraf can be configured to subscribe to this topic and forward the data to InfluxDB.
+- Grafana visualizes the data from InfluxDB in real time.
+
+### Telegraf Configuration
+
+To ensure Telegraf collects this data, add the following to your `telegraf/telegraf.conf`:
+
+```toml
+[[inputs.mqtt_consumer]]
+  servers = ["tcp://mqtt:1883"]
+  topics = ["InstantaneousMeterReading"]
+  data_format = "json"
+  name_override = "instantaneous_meter_reading"
+  tag_keys = ["touTier"]
+```
+
+- This will store both the `value` and `touTier` fields in InfluxDB for visualization.
+
 ## Contributing
 
 Please feel free to create an issue with a feature request, bug, or any other comments you have on the software found here.

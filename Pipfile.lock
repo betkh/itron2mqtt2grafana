@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "71d5c6441746f16d7603d0f204007c686df78beba14d427ad39e6dbc0683bcb9"
+            "sha256": "124cd0ce443b3290df8b219cdd2280cef3e64928db255e213b9883170d63f708"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -147,10 +147,12 @@
         },
         "paho-mqtt": {
             "hashes": [
-                "sha256:2a8291c81623aec00372b5a85558a372c747cbca8e9934dfe218638b8eefc26f"
+                "sha256:12d6e7511d4137555a3f6ea167ae846af2c7357b10bc6fa4f7c3968fc1723834",
+                "sha256:6db9ba9b34ed5bc6b6e3812718c7e06e2fd7444540df2455d2c51bd58808feee"
             ],
             "index": "pypi",
-            "version": "==1.6.1"
+            "markers": "python_version >= '3.7'",
+            "version": "==2.1.0"
         },
         "pyyaml": {
             "hashes": [
@@ -212,12 +214,12 @@
         },
         "requests": {
             "hashes": [
-                "sha256:64299f4909223da747622c030b781c0d7811e359c37124b4bd368fb8c6518baa",
-                "sha256:98b1b2782e3c6c4904938b84c0eb932721069dfdb9134313beff7c83c2df24bf"
+                "sha256:27babd3cda2a6d50b30443204ee89830707d396671944c998b5975b031ac2b2c",
+                "sha256:27d0316682c8a29834d3264820024b62a36942083d52caf2f14c0591336d3422"
             ],
             "index": "pypi",
-            "markers": "python_version >= '3.7' and python_version < '4'",
-            "version": "==2.28.2"
+            "markers": "python_version >= '3.8'",
+            "version": "==2.32.4"
         },
         "tenacity": {
             "hashes": [
