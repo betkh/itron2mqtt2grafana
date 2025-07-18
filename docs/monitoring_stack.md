@@ -204,17 +204,17 @@ When running the simulated meter, you'll see formatted output like:
 ======================================================================
 ⚡ POWER USAGE:
    Current Demand:   2345 W
-   Topic: homeassistant/sensor/xcel_itron_5/Instantaneous_Demand/state
+   Topic: xcel_itron_5/Instantaneous_Demand/state
 
 🔌 ENERGY CONSUMPTION:
    Total Received: 12345678 Wh
    Converted:         12345.678 kWh
-   Topic: homeassistant/sensor/xcel_itron_5/Current_Summation_Received/state
+   Topic: xcel_itron_5/Current_Summation_Received/state
 
 ☀️  SOLAR PRODUCTION:
    Total Delivered:  5432100 Wh
    Converted:          5432.100 kWh
-   Topic: homeassistant/sensor/xcel_itron_5/Current_Summation_Delivered/state
+   Topic: xcel_itron_5/Current_Summation_Delivered/state
 
 📈 NET ENERGY:
    Net Consumption:   6913578 Wh

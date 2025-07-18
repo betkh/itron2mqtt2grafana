@@ -23,7 +23,7 @@ When the application starts, it sends **configuration messages** to Home Assista
   "name": "Xcel Itron 5 Instantaneous Demand",
   "device_class": "power",
   "unit_of_measurement": "W",
-  "state_topic": "homeassistant/sensor/xcel_itron_5/Instantaneous_Demand/state",
+  "state_topic": "xcel_itron_5/Instantaneous_Demand/state",
   "unique_id": "xcel_itron_5_instantaneous_demand_instantaneous_demand",
   "device": {
     "identifiers": ["1234567890123456789012345678901234567890"],
@@ -68,9 +68,9 @@ These topics receive the sensor configuration messages:
 
 These topics receive the actual sensor data:
 
-- `homeassistant/sensor/xcel_itron_5/Instantaneous_Demand/state`
-- `homeassistant/sensor/xcel_itron_5/Current_Summation_Received/state`
-- `homeassistant/sensor/xcel_itron_5/Current_Summation_Delivered/state`
+- `xcel_itron_5/Instantaneous_Demand/state`
+- `xcel_itron_5/Current_Summation_Received/state`
+- `xcel_itron_5/Current_Summation_Delivered/state`
 
 ### **Device Information Topic**
 
@@ -180,7 +180,7 @@ The YAML configuration automatically generates:
 - **Sensor Name**: "Xcel Itron 5 Instantaneous Demand"
 - **Device Class**: `power`
 - **Unit of Measurement**: `W`
-- **State Topic**: `homeassistant/sensor/xcel_itron_5/Instantaneous_Demand/state`
+- **State Topic**: `xcel_itron_5/Instantaneous_Demand/state`
 - **Unique ID**: `xcel_itron_5_instantaneous_demand_instantaneous_demand`
 
 ## **Retention and Persistence**

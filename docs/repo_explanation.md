@@ -173,9 +173,9 @@ The application uses a hierarchical topic structure following Home Assistant's M
 
 **State Topics (for actual data):**
 
-- `homeassistant/sensor/xcel_itron_5/Instantaneous_Demand/state`
-- `homeassistant/sensor/xcel_itron_5/Current_Summation_Received/state`
-- `homeassistant/sensor/xcel_itron_5/Current_Summation_Delivered/state`
+- `xcel_itron_5/Instantaneous_Demand/state`
+- `xcel_itron_5/Current_Summation_Received/state`
+- `xcel_itron_5/Current_Summation_Delivered/state`
 
 **Device Information Topic:**
 
@@ -232,7 +232,7 @@ def mqtt_publish(self, topic: str, message: str, retain=False) -> int:
   "name": "Xcel Itron 5 Instantaneous Demand",
   "device_class": "power",
   "unit_of_measurement": "W",
-  "state_topic": "homeassistant/sensor/xcel_itron_5/Instantaneous_Demand/state",
+  "state_topic": "xcel_itron_5/Instantaneous_Demand/state",
   "unique_id": "xcel_itron_5_instantaneous_demand_instantaneous_demand",
   "device": {
     "identifiers": ["1234567890123456789012345678901234567890"],
