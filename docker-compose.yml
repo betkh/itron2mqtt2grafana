@@ -64,22 +64,7 @@ services:
       - influxdb
     restart: unless-stopped
 
-  # Simulated Xcel Meter Data Generator
-  simulated_meter:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: simulated_meter
-    depends_on:
-      - mqtt
-    environment:
-      - MQTT_SERVER=${MQTT_SERVER}
-      - MQTT_PORT=${MQTT_PORT}
-      - MQTT_USER=${MQTT_USER}
-      - MQTT_PASSWORD=${MQTT_PASSWORD}
-      - LOGLEVEL=${LOGLEVEL}
-    command: python3 simulated_meter.py
-    restart: unless-stopped
+
 
   # Xcel Itron2MQTT Application (for when you have real meter access)
   xcel_itron2mqtt:
